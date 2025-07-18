@@ -8,16 +8,14 @@ public class Main {
 
     public static void main(String[] args) {
         ArrayList<Animal> celeiro = new ArrayList<>();
-
-        celeiro.add(new Animal("Herbívoro"));
+        celeiro.add(new Animal());
         celeiro.add(new Boi());
         celeiro.add(new Cachorro());
+        celeiro.add(new Frango());
         celeiro.add(new Gato());
 
-        System.out.println(celeiro);
-
-        for(Animal x : celeiro){
-            x.fazer_barulho();
+        for(Animal x :celeiro){
+            System.out.println(x);
         }
     }
 }
